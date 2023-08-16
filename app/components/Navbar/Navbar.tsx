@@ -1,11 +1,17 @@
 import Container from "../Container";
+import Logo from "./Logo";
+import Search from "./Search";
 
 const Navbar = () => {
   return (
     <div className="fixed w-full bg-white z-10 shadow-sm">
-      Navbar this
-      <div className="py-4 border-b-[1px] bg-red-700">
-        <Container>anything......</Container>
+      <div className="py-4 border-b-[1px] bg-white">
+        <Container>
+          <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
+            <Logo />
+            <Search />
+          </div>
+        </Container>
       </div>
     </div>
   );
